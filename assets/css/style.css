@@ -1,0 +1,88 @@
+
+#carouselExampleControls,
+#carouselExampleControls > div,
+#carouselExampleControlsl > div > div > img {
+    height: calc(100vh - 56px);
+}
+
+
+
+.btn-customize {
+  color:#43b1f7;
+  border: 1px solid#43b1f7;
+  border-radius: 6px;
+  padding: 0 10px;
+}
+
+.btn-customize-big {
+  color:#43b1f7;
+  border: 1px solid #43b1f7;
+  border-radius: 6px;
+  padding: 10px 20px;
+}
+
+.btn-customize-inverse-big {
+  background-color:#43b1f7;
+  color: #fff;
+  border: 1px solid #43b1f7;
+  border-radius: 6px;
+  padding: 10px 20px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+margin-bottom: 0.5rem;
+font-family: 'Raleway', sans-serif;
+font-weight: 500;
+line-height: 1.2;
+color: inherit;
+}
+
+.img-200 {
+  height: 200px;
+  width: 200px;
+}
+
+/* carousel image */
+.carousel-img-1 {
+  background-image: url(/assets/images/kitty1.jpg);
+}
+
+.carousel-img-2 {
+  background-image: url(/assets/images/kitty2.jpg);
+}
+
+.carousel-img-3 {
+  background-image: url(/assets/images/kitty3.jpg);
+}
+
+
+/* make active item container fill height of viewport using flexbox */
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+    flex: 1 0 100%;
+}
+
+/* fix transitioning item height */
+.carousel-item-next:not(.carousel-item-left),
+.active.carousel-item-right,
+.carousel-item-prev:not(.carousel-item-right),
+.active.carousel-item-left {
+    flex: 0 0 0;
+}
+
+/* make images fill height and width or clip */
+.carousel-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-logo {
+  height: 50px;
+  width: 100px;
+}
+
+img{
+  object-fit: cover;
+}
